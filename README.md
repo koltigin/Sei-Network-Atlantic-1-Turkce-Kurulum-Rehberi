@@ -16,7 +16,7 @@
 ## Sistemi Güncelleme
 
 ```shell
-sudo apt update
+sudo apt update && sudo apt upgrade -y
 ```
 
 ## Gerekli Kütüphanelerin Kurulması
