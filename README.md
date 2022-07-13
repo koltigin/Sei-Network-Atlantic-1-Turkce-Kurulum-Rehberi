@@ -246,12 +246,12 @@ seid keys list
 
 ### Cüzdanı İçeri Aktarma
 ```shell
-seid keys add CUZDAN_ADI --recover
+seid keys add WALLET --recover
 ```
 
 ### Cüzdanı Silme
 ```shell
-seid keys delete CUZDAN_ADI
+seid keys delete WALLET
 ```
 
 ### Cüzdan Bakiyesine Bakma
@@ -261,40 +261,40 @@ seid query bank balances CUZDAN_ADRESI
 
 ### Bir Cüzdandan Diğer Bir Cüzdana Transfer Yapma
 ```shell
-seid tx bank send CUZDAN_ADRESI GONDERILECEK_CUZDAN_ADRESI 100000000grain
+seid tx bank send CUZDAN_ADRESI GONDERILECEK_CUZDAN_ADRESI 100000000usei
 ```
 
 ### Proposal Oylamasına Katılma
 ```shell
-seid tx gov vote 1 yes --from CUZDAN_ADI --chain-id=paloma-testnet-6
+seid tx gov vote 1 yes --from CUZDAN_ADI --chain-id=CHAIN_ID 
 ```
 
 ### Validatore Stake Etme / Delegate Etme
 ```shell
-seid tx staking delegate $VALOPER_ADDRESS 100000000grain --from=CUZDAN_ADI --chain-id=paloma-testnet-6 --gas=auto
+seid tx staking delegate $VALOPER_ADDRESS 100000000usei --from=WALLET --chain-id=CHAIN_ID  --gas=auto
 ```
 
 ### Mevcut Validatorden Diğer Validatore Stake Etme / Redelegate Etme
 ```shell
-seid tx staking redelegate <MevcutValidatorAdresi> <StakeEdilecekYeniValidatorAdresi> 100000000grain --from=CUZDAN_ADI/CUZDAN_ADRESI --chain-id=paloma-testnet-6 --gas=auto
+seid tx staking redelegate <MevcutValidatorAdresi> <StakeEdilecekYeniValidatorAdresi> 100000000usei --from=WALLET --chain-id=CHAIN_ID  --gas=auto
 ```
 
 ### Ödülleri Çekme
 ```shell
-seid tx distribution withdraw-all-rewards --from=CUZDAN_ADI --chain-id=paloma-testnet-6 --gas=auto
+seid tx distribution withdraw-all-rewards --from=WALLET --chain-id=CHAIN_ID  --gas=auto
 ```
 
 ### Komisyon Ödüllerini Çekme
 ```shell
-seid tx distribution withdraw-rewards $VALIDATOR_ADRESI --from=CUZDAN_ADI --commission --chain-id=paloma-testnet-6
+seid tx distribution withdraw-rewards VALIDATOR_ADRESI --from=WALLET --commission --chain-id=CHAIN_ID 
 ```
 
 ### Validator İsmini Değiştirme
 ```shell
 seid tx staking edit-validator \
 --moniker=YENI_NODE_ADI \
---chain-id=paloma-testnet-6 \
---from=CUZDAN_ADI
+--chain-id=CHAIN_ID  \
+--from=WALLET
 ```
 
 ### Validatoru Jail Durumundan Kurtarma 
@@ -302,7 +302,7 @@ seid tx staking edit-validator \
 seid tx slashing unjail \
   --broadcast-mode=block \
   --from=CUZDAN_ADI \
-  --chain-id=paloma-testnet-6 \
+  --chain-id=CHAIN_ID  \
   --gas=auto
 ```
 
