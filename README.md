@@ -27,7 +27,7 @@ sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bs
 ```shell
 ver="1.18.2"
 cd $HOME
-wget "go1$ver.linux-amd64.tar.gz https://golang.org/dl/go$ver.linux-amd64.tar.gz"
+wget "go$ver.linux-amd64.tar.gz https://golang.org/dl/go$ver.linux-amd64.tar.gz"
 rm -rf /usr/local/go
 tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"
 rm "go$ver.linux-amd64.tar.gz"
