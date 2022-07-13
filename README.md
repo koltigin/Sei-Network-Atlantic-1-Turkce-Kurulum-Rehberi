@@ -23,7 +23,7 @@ sudo apt update
 ```shell
 sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils htop -y < "/dev/null"
 ```
-# Go Kurulumu
+## Go Kurulumu
 ```shell
 ver="1.18.2"
 cd $HOME
