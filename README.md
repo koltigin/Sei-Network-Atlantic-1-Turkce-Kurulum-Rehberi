@@ -23,6 +23,7 @@ sudo apt update && sudo apt upgrade -y
 ```shell
 sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils htop -y < "/dev/null"
 ```
+
 ## Go Kurulumu
 ```shell
 ver="1.18.2"
@@ -92,6 +93,11 @@ sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" $HOME/.sei/config/app.toml
 sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/" $HOME/.sei/config/app.toml
 sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.sei/config/app.toml
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.sei/config/app.toml
+```
+
+## Prometheus'u Aktif Etme
+```shell
+sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.sei/config/config.toml
 ```
 
 ## Zincir Verilerini Sıfırlama
