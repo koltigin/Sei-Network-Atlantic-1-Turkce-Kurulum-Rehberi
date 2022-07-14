@@ -137,8 +137,11 @@ journalctl -u seid -f
 ```shell
 seid keys add WALLET --keyring-backend file
 ```
-###Var Olan Cüzdanı İçeri Aktarma
+
+### Var Olan Cüzdanı İçeri Aktarma
+```shell
 seid keys add WALLET --recover
+```
 
 ## Faucet / Musluk
 Test token almak için Discord'da [#atlantic-1-faucet](https://discord.gg/DPE4UHrR4k) kanalından şu şekilde `!faucet send CUZDAN_ADRESINIZ` mesaj atıyoruz.
