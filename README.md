@@ -44,9 +44,9 @@ go version
 `$NODENAME` validator adınız
 `$WALLET` sei cüzdan adınız
 ```shell
-echo 'export NODENAME='$NODENAME  >> $HOME/.bash_profile
-echo 'export WALLET='$WALLET >> $HOME/.bash_profile
-echo 'export CHAIN_ID='atlantic-1 >> $HOME/.bash_profile
+echo "export NODENAME=$NODENAME"  >> $HOME/.bash_profile
+echo "export WALLET=$WALLET" >> $HOME/.bash_profile
+echo "export CHAIN_ID=atlantic-1" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 
@@ -71,8 +71,8 @@ seid init $NODENAME --chain-id $CHAIN_ID
 
 ## Genesis ve Addrbook Dosyalarının İndirilmesi
 ```shell
-curl -qO $HOME/.sei/config/genesis.json "https://raw.githubusercontent.com/sei-protocol/testnet/master/sei-incentivized-testnet/genesis.json" 
-curl -qO $HOME/.sei/config/genesis.json "https://raw.githubusercontent.com/sei-protocol/testnet/master/sei-incentivized-testnet/addrbook.json"
+curl https://raw.githubusercontent.com/sei-protocol/testnet/master/sei-incentivized-testnet/genesis.json > ~/.sei/config/genesis.json
+curl https://raw.githubusercontent.com/sei-protocol/testnet/master/sei-incentivized-testnet/addrbook.json > ~/.sei/config/addrbook.json
 ```
 ## Minimum GAS Ücretinin Ayarlanması
 ```shell
@@ -141,14 +141,14 @@ journalctl -u seid -f
 
 ## Cüzdan Oluşturma
 ### Yeni Cüzdan Oluşturma
-`WALLET` bölümünü değiştirmiyoruz kurulumun başında cüzdanımıza isim belirledik.
+`$WALLET` bölümünü değiştirmiyoruz kurulumun başında cüzdanımıza isim belirledik.
 ```shell
-seid keys add WALLET --keyring-backend file
+seid keys add $WALLET --keyring-backend file
 ```
 
 ### Var Olan Cüzdanı İçeri Aktarma
 ```shell
-seid keys add WALLET --recover
+seid keys add $WALLET --recover
 ```
 
 ## Faucet / Musluk
