@@ -56,9 +56,6 @@ git clone --depth 1 --branch 1.0.6beta https://github.com/sei-protocol/sei-chain
 cd sei-chain && make install
 go build -o build/seid ./cmd/seid
 chmod +x ./build/seid && sudo mv ./build/seid /usr/local/bin/seid
-mv $HOME/go/bin/seid /usr/local/bin/
-mv $HOME/sei-chain $HOME/sei
-mv $HOME/.sei-chain $HOME/.sei
 ```
 
 ## Uygulamayı Yapılandırma
