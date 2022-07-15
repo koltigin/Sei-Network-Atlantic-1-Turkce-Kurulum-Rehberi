@@ -257,13 +257,12 @@ seid keys list
 
 ### Cüzdanı İçeri Aktarma
 ```shell
-seid keys add WALLET --recover
+seid keys add CUZDAN_ADI --recover
 ```
 
 ### Cüzdanı Silme
 ```shell
-seid keys delete WALLET
-```
+seid keys delete CUZDAN_ADI
 
 ### Cüzdan Bakiyesine Bakma
 ```shell
@@ -282,7 +281,7 @@ seid tx gov vote 1 yes --from CUZDAN_ADI --chain-id=CHAIN_ID
 
 ### Validatore Stake Etme / Delegate Etme
 ```shell
-seid tx staking delegate $VALOPER_ADDRESS 100000000usei --from=WALLET --chain-id=CHAIN_ID  --gas=auto
+seid tx staking delegate VALOPER_ADRESI 100000000usei --from=CUZDAN_ADI --chain-id=CHAIN_ID  --gas=auto
 ```
 
 ### Mevcut Validatorden Diğer Validatore Stake Etme / Redelegate Etme
@@ -292,12 +291,12 @@ seid tx staking redelegate <MevcutValidatorAdresi> <StakeEdilecekYeniValidatorAd
 
 ### Ödülleri Çekme
 ```shell
-seid tx distribution withdraw-all-rewards --from=WALLET --chain-id=CHAIN_ID  --gas=auto
+seid tx distribution withdraw-all-rewards --from=CUZDAN_ADI --chain-id=CHAIN_ID  --gas=auto
 ```
 
 ### Komisyon Ödüllerini Çekme
 ```shell
-seid tx distribution withdraw-rewards VALIDATOR_ADRESI --from=WALLET --commission --chain-id=CHAIN_ID 
+seid tx distribution withdraw-rewards VALIDATOR_ADRESI --from=CUZDAN_ADI --commission --chain-id=CHAIN_ID 
 ```
 
 ### Validator İsmini Değiştirme
