@@ -1,6 +1,6 @@
 # SEI Network Atlantic-1 Türkçe Node Kurulum Rehberi
 
-![01-sei-bilesenler](https://user-images.githubusercontent.com/102043225/178796113-6292ed0f-8ffe-48c3-977d-314e8f55819a.jpg)
+![01-sei-bilesenler](https://user-images.githubusercontent.com/102043225/180085705-a5951e2c-8fe8-4c56-aa3d-f6169d0706ae.png)
 
 ## Sistem Gereksinimleri
 * **Minimum**
