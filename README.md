@@ -13,10 +13,12 @@
   * 500 GB NVME SSD
   * 4.2 GHz x6 CPU 
   
-##Güncellemeler
+## Güncellemeler
  - [1.0.6beta-val-count-fix Güncellemesi](https://github.com/koltigin/Sei-Network-Atlantic-1-Turkce-Kurulum-Rehberi/blob/main/Sei-Guncelleme-1.0.6beta.md-val-count-fix.md)
  - [Sei 1.0.7beta-postfix Güncellemesi](https://github.com/koltigin/Sei-Network-Atlantic-1-Turkce-Kurulum-Rehberi/blob/main/Sei-Guncelleme-1.0.7beta-postfix.md)
  - [Sei 1.1.0beta Güncellemesi](https://github.com/koltigin/Sei-Network-Atlantic-1-Turkce-Kurulum-Rehberi/blob/main/Sei-Guncelleme-1.1.0beta.md)
+
+# Sei Network Kurulumu
 
 ## Sistemi Güncelleme
 
