@@ -1,5 +1,5 @@
 # Sei 1.1.0beta Güncellemesi
-836963. blok ulaşanlar 1.07beta-postfix güncellemesini yapabilir.
+836963. blok ulaşanlar 1.1.0beta güncellemesini yapabilir.
 
 ## Güncelleme Yapmadan Önce 
 ```shell
