@@ -1,4 +1,4 @@
-# Sei 1.1.0beta Güncellemesi
+# Sei 1.1.1beta Güncellemesi
 3223245. bloğa ulaşanlar 1.1.1beta güncellemesini yapabilir.
 
 ## Güncelleme Yapmadan Önce 
