@@ -21,15 +21,21 @@
 
 # Sei Network Kurulumu
 
+## Root Yetkisi Alma Ve Root Dizinine Geçme
+```shell
+sudo su
+cd /root
+```
+
 ## Sistemi Güncelleme
 
 ```shell
-sudo apt update && sudo apt upgrade -y
+apt update && sudo apt upgrade -y
 ```
 
 ## Gerekli Kütüphanelerin Kurulması
 ```shell
-sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils htop -y < "/dev/null"
+apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils htop -y < "/dev/null"
 ```
 
 ## Go Kurulumu
