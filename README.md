@@ -333,12 +333,12 @@ seid tx slashing unjail \
 
 ### Node'u Tamamen Silme 
 ```shell
-sudo systemctl stop seid && \
-sudo systemctl disable seid && \
-rm /etc/systemd/system/seid.service && \
-sudo systemctl daemon-reload && \
-cd $HOME && \
-rm -rf .sei sei-chain && \
+sudo systemctl stop seid
+sudo systemctl disable seid
+rm /etc/systemd/system/seid.service
+sudo systemctl daemon-reload
+cd $HOME
+rm -rf .sei sei-chain
 rm -rf $(which seid)
 ```
 
