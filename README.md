@@ -338,8 +338,8 @@ sudo systemctl disable seid
 rm /etc/systemd/system/seid.service
 sudo systemctl daemon-reload
 cd $HOME
-rm -rf .sei sei-chain
-rm -rf $(which seid)
+rm .sei sei-chain -rf
+rm $(which seid) -rf
 ```
 
 
